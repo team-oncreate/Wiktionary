@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_explore"
+        android:icon="@drawable/ic_public"
+        android:title="@string/action_explore" />
+    <item
+        android:id="@+id/action_my_lists"
+        android:icon="@drawable/ic_bookmark"
+        android:title="@string/action_my_lists" />
+    <item
+        android:id="@+id/action_history"
+        android:icon="@drawable/ic_history"
+        android:title="@string/action_history" />
+    <item
+        android:id="@+id/action_nearby"
+        android:icon="@drawable/ic_explore"
+        android:title="@string/action_nearby" />
+</menu>

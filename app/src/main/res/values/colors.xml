@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/accent50</color>
+    <color name="colorPrimaryDark">@color/base30</color>
+    <color name="colorAccent">@color/accent50</color>
+
+    <!-- Wikimedia Design Style Guide Colors -->
+    <!-- https://design.wikimedia.org/style-guide/visual-style_colors.html -->
+    <color name="base100">#fff</color>
+    <color name="base90">#f8f9fa</color>
+    <color name="base80">#eaecf0</color>
+    <color name="base70">#c8ccd1</color>
+    <color name="base50">#a2a9b1</color>
+    <color name="base30">#72777d</color>
+    <color name="base20">#54595d</color>
+    <color name="base10">#222</color>
+    <color name="base0">#000</color>
+
+    <color name="accent90">#eaf3ff</color>
+    <color name="accent50">#36c</color>
+    <color name="accent10">#2a4b8d</color>
+    
+    <color name="red90">#fee7e6</color>
+    <color name="red50">#d33</color>
+    <color name="red30">#b32424</color>
+    <color name="green90">#d5fdf4</color>
+    <color name="green50">#00af89</color>
+    <color name="green30">#14866d</color>
+    <color name="yellow90">#fef6e7</color>
+    <color name="yellow50">#fc3</color>
+    <color name="yellow30">#ac6600</color>
+</resources>
