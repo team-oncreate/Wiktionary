@@ -8,15 +8,65 @@
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/base90"
+        app:elevation="0dp">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/app_bar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:theme="@style/Light.ActionBarTheme"
+            android:theme="@style/ActionBarTheme"
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"></android.support.v7.widget.Toolbar>
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@android:color/background_light"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="1dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:alpha="0.54"
+                    android:contentDescription="@string/search_bar"
+                    app:srcCompat="@drawable/ic_search" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_toEndOf="@+id/imageView"
+                    android:text="@string/search_bar" />
+
+                <ImageButton
+                    android:id="@+id/button_voice_search"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_vertical"
+                    android:alpha="0.54"
+                    android:contentDescription="@string/button_voice_search"
+                    app:srcCompat="@drawable/ic_keyboard_voice" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
 
     </android.support.design.widget.AppBarLayout>
 
@@ -30,52 +80,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <android.support.v7.widget.CardView
-                android:id="@+id/search_bar"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_margin="8dp"
-                app:cardBackgroundColor="@android:color/background_light"
-                app:cardCornerRadius="2dp"
-                app:cardElevation="1dp">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:clickable="true"
-                    android:focusable="true">
-
-                    <ImageView
-                        android:id="@+id/imageView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="12dp"
-                        android:alpha="0.54"
-                        android:contentDescription="@string/search_bar"
-                        app:srcCompat="@drawable/ic_search" />
-
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:layout_marginBottom="12dp"
-                        android:layout_toEndOf="@+id/imageView"
-                        android:text="@string/search_bar" />
-
-                    <ImageButton
-                        android:id="@+id/button_voice_search"
-                        style="?android:attr/borderlessButtonStyle"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_alignParentEnd="true"
-                        android:layout_gravity="center_vertical"
-                        android:alpha="0.54"
-                        android:contentDescription="@string/button_voice_search"
-                        app:srcCompat="@drawable/ic_keyboard_voice" />
-                </RelativeLayout>
-
-            </android.support.v7.widget.CardView>
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 

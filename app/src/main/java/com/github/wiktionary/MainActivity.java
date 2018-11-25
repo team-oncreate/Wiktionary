@@ -1,5 +1,6 @@
 package com.github.wiktionary;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -35,14 +36,28 @@ public class MainActivity extends AppCompatActivity {
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                        // set item as selected to persist highlight
                         menuItem.setChecked(true);
-
+                        // close drawer when item is tapped
                         drawerLayout.closeDrawers();
 
-                        return true;
+                        // Add code here to update the UI based on the item selected
+                        // For example, swap UI fragments here
+
+                        switch (menuItem.getItemId()) {
+                            case R.id.action_settings:
+                                startActivity(new Intent(MainActivity.this, SettingsActivity.class));
+                                return true;
+
+                            case R.id.action_about:
+                                startActivity(new Intent(MainActivity.this, AboutActivity.class));
+                                return true;
+
+                            default: return true;
+                        }
                     }
-                }
-        );
+                });
+
 
         drawerLayout.addDrawerListener(
                 new DrawerLayout.DrawerListener() {

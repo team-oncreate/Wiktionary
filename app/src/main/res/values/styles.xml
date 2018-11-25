@@ -8,9 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="ToolbarTheme" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/base90</item>
+    </style>
+
     <style name="ActionBarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
-        <item name="android:fontFamily">@font/linlibertine_rz</item>
+        <item name="android:background">@color/base90</item>
         <item name="android:elevation">0dp</item>
+        <item name="android:fontFamily">@font/linlibertine_rz</item>
     </style>
 
 </resources>

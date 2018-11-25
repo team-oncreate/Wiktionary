@@ -19,4 +19,34 @@
     <string name="action_my_lists">My lists</string>
     <string name="action_history">History</string>
     <string name="action_nearby">Nearby</string>
+
+    <string name="button_tabs">Show tabs</string>
+    <string name="button_more">More options</string>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_languages">Wiktionary languages</string>
+    <string name="pref_description_languages">English</string>
+
+    <string name="pref_title_theme">App theme</string>
+    <string name="pref_description_theme">Light</string>
+
+    <!-- Settings for data usage -->
+    <string name="pref_header_data_usage">Data usage</string>
+
+    <string name="pref_title_wifi_only">Download only over Wi-Fi</string>
+
+    <!-- About information in Settings -->
+    <string name="pref_header_about">About</string>
+
+    <string name="pref_title_about_app">About the Wiktionary app</string>
+
+    <string name="pref_title_privacy_policy">Privacy policy</string>
+
+    <string name="pref_title_terms">Terms of use</string>
 </resources>

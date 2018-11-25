@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="pref_general"
+        android:title="@string/pref_header_general">
+
+        <Preference
+            android:key="pref_languages"
+            android:title="@string/pref_title_languages" />
+
+        <Preference
+            android:key="pref_theme"
+            android:title="@string/pref_title_theme" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_data_usage"
+        android:title="@string/pref_header_data_usage">
+
+        <SwitchPreference
+            android:key="pref_wifi_only"
+            android:title="@string/pref_title_wifi_only" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_about"
+        android:title="@string/pref_header_about">
+
+        <Preference
+            android:key="pref_about_app"
+            android:title="@string/pref_title_about_app" />
+
+        <Preference
+            android:key="pref_privacy_policy"
+            android:title="@string/pref_title_privacy_policy" />
+
+        <Preference
+            android:key="pref_terms"
+            android:title="@string/pref_title_terms" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
